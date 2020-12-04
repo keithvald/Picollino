@@ -1,7 +1,217 @@
+@font-face
+{
+	font-family: "eb-garamond";
+	src: url('../FONT/eb-garamond/EBGaramond-Regular.ttf');
+}
+
+@font-face
+{
+	font-family: "GARMNDB";
+	src: url('../FONT/garamond-bold/GARMNDB.ttf');
+}
+
+
+@font-face
+{
+	font-family: "";
+	src: url('');
+}
+
+
+@font-face
+{
+	font-family: "";
+	src: url('');
+}
+
+/*------------------------------------------ BODY --------------------------------------------*/
 body
 {
-	background: url(IMAGES/background.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	-moz-box-sizing: border-box;
+  	-webkit-box-sizing: border-box;
+ 	box-sizing: border-box;
+ 	margin: 0;
+	background-color: transparent;
+	background-image: url('../IMAGES/BACKGROUND/background.jpeg');
+	background-repeat: repeat;
+	background-attachment: scroll;
 	background-size: cover;
+}
+
+*
+{
+	font-family: "eb-garamond";
+	color: black;
+}
+
+h2
+{
+	font-size: 3em;
+	font-family: "GARMNDB";
+	letter-spacing: 0.9rem;
+}
+
+h4
+{
+	font-size: 2em;
+	letter-spacing: 0.6rem;
+}
+/*------------------------------------------- NAV --------------------------------------------*/
+
+nav
+{
+	background-color: white;
+	border-bottom: solid;
+	border-width: 3px;
+	border-color: rgb(223, 203, 0);
+	width: 100%;
+	margin-top: -1.5rem;
+  	position: fixed;
+}
+
+.navbar-brand
+{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.nav-link
+{
+	font-family: "GARMNDB";
+	font-size: 1.5em;
+	color: black;
+	letter-spacing: 0.4rem;
+	 padding: 0.5rem 3rem;
+
+}
+/*----------------------------------------- CAROUSEL -----------------------------------------*/
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon 
+{
+     width: 150px;
+     height: 150px;
+}
+
+.carousel-control-prev,
+.carousel-control-next
+{
+	opacity: 1;
+}
+
+.carousel-control-prev:hover, .carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next:focus {
+  color: #000;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.5;
+}
+
+.carousel-caption
+{
+	background-color: rgba( 0, 0, 0, 0.5);
+	padding: 2%;
+	position: absolute;
+	top: 40%;
+	bottom: 40%;
+
+}
+
+/*---------------------------------------- NOS GAMMES ET NOS HISTOIRES ----------------------------------------*/
+
+hr {
+  height: 3px;
+  margin: -0.5em 0;
+  padding: 0;
+  background-color: rgb(223, 203, 0);
+  border: 0;
+}
+
+.titre-text
+{
+	text-align: center;
+	font-size: 2em;
+	font-weight: 550;
+}
+
+/*-- CARD GAMMES --*/
+
+
+.container-fluid:nth-of-type(3) 
+{
+	margin-top: 5%;
+	width: 90%;
+}
+
+.container-fluid:nth-of-type(3) .card-card
+{
+	margin-bottom: 5%;
+}
+
+.container-fluid:nth-of-type(3) .card
+{
+	width: 85%;
+	height: auto;
+}
+
+.container-fluid:nth-of-type(3) .card-body .btn
+{
+	background-color: rgb(223, 203, 0);
+	border: none;
+	font-weight: lighter;
+	font-size: 0.9em;
+	padding: 0.15rem 0.40rem;
+}
+
+/*-- CARD HISTOIRES --*/
+
+
+.container-fluid:nth-of-type(4)
+{
+	margin-top: 5%;
+	width: 90%;
+}
+
+.container-fluid:nth-of-type(4) .container .row
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.container-fluid:nth-of-type(4) .card
+{
+  width: 160%;
+  background-color: transparent;
+  border: none;
+}
+
+.container-fluid:nth-of-type(4) .card img
+{
+
+	border-radius: 100%;
+}
+
+
+.container-fluid:nth-of-type(4) .card-body
+{
+	text-align: center;
+}
+
+.container-fluid:nth-of-type(4) .card-body .btn
+{
+	background-color: rgb(223, 203, 0);
+	border: none;
+	font-weight: lighter;
+	font-size: 0.9em;
+	padding: 0.25rem 0.25rem;
+}
+
+/*------------------------------------- NOS ORIGINES ET NOS INFRASTRUCTURES -----------------------------------*/
+
+.container:nth-of-type(4)
+{
+	margin-top: 10%;
+
 }
