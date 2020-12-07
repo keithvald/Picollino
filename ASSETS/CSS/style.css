@@ -100,6 +100,8 @@ nav
 	 padding: 0.5rem 3rem;
 
 }
+
+
 /*----------------------------------------- CAROUSEL -----------------------------------------*/
 
 .carousel-control-prev-icon,
@@ -131,8 +133,13 @@ nav
 	position: absolute;
 	top: 40%;
 	bottom: 40%;
-
 }
+
+.carousel-caption h1, .carousel-caption p
+{
+	color: white;
+}
+
 
 /*---------------------------------------- NOS GAMMES ET NOS HISTOIRES ----------------------------------------*/
 
@@ -352,6 +359,7 @@ a[href="tel:+3301 52 48 68 20"]
 
 .formulaire_contacter
 {
+	margin-top: 5%;
 }
 
 form
@@ -405,19 +413,4 @@ input[value="Envoyer"]
 	font-size: 1.5em;
 	text-align: center;
 	font-family: "garamond-bold";
-}
-
-.map-container-2
-{
-	overflow:hidden;
-	padding-bottom:56.25%;
-	height:0;
-}
-
-.map-container-2 iframe
-{
-	left:0;
-	top:0;
-	height:50%;
-	width:100%;
 }
