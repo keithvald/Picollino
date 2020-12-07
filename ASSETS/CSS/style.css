@@ -6,8 +6,8 @@
 
 @font-face
 {
-	font-family: "GARMNDB";
-	src: url('../FONT/garamond-bold/GARMNDB.ttf');
+	font-family: "garmond";
+	src: url('../FONT/garamond-bold/garmond.ttf');
 }
 
 
@@ -46,8 +46,15 @@ body
 
 h2
 {
-	font-size: 3em;
-	font-family: "GARMNDB";
+	font-size: 2em;
+	font-family: "garmond";
+	letter-spacing: 0.9rem;
+}
+
+h2 a
+{
+	font-size: 1.5em;
+	font-family: "garmond";
 	letter-spacing: 0.9rem;
 }
 
@@ -55,6 +62,15 @@ h4
 {
 	font-size: 2em;
 	letter-spacing: 0.6rem;
+}
+
+#accordion h5 button
+{
+	font-size: 1em;
+	font-family: "eb-garamond";
+	color: black;
+	text-decoration: none;
+	font-weight: 500;
 }
 /*------------------------------------------- NAV --------------------------------------------*/
 
@@ -77,7 +93,7 @@ nav
 
 .nav-link
 {
-	font-family: "GARMNDB";
+	font-family: "garmond";
 	font-size: 1.5em;
 	color: black;
 	letter-spacing: 0.4rem;
@@ -122,7 +138,7 @@ nav
 
 hr {
   height: 3px;
-  margin: -0.5em 0;
+  margin: 0.5em 0;
   padding: 0;
   background-color: rgb(223, 203, 0);
   border: 0;
@@ -173,6 +189,12 @@ hr {
 	width: 90%;
 }
 
+.container-fluid:nth-of-type(4) p
+{
+
+	letter-spacing: 1.5px;
+}
+
 .container-fluid:nth-of-type(4) .container .row
 {
 	display: flex;
@@ -208,10 +230,111 @@ hr {
 	padding: 0.25rem 0.25rem;
 }
 
-/*------------------------------------- NOS ORIGINES ET NOS INFRASTRUCTURES -----------------------------------*/
+/*------------------------------------- NOS ORIGINES / INFRASTRUCTURE / ACCORDÉON -----------------------------------*/
+
+.container:nth-of-type(4) hr
+{
+  height: 3px;
+  margin: 3em 0;
+  padding: 0;
+  background-color: rgb(223, 203, 0);
+  border: 0;
+}
+
+}
+/*-- NOS ORIGINES --*/
 
 .container:nth-of-type(4)
 {
 	margin-top: 10%;
 
+}
+
+.container:nth-of-type(4) .container-fluid .container-fluid
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+/*-- NOS INFRASTRUCTURES --*/
+
+
+.container:nth-of-type(4) .container-fluid:nth-of-type(2) .container-fluid
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.origines
+{
+	align-self: center;
+}
+
+.origines p
+{
+	letter-spacing: 1.5px;
+}
+
+/*-- ACCORDÉON --*/
+
+#accordion .card-header
+{
+	background-color: rgb( 223, 203, 0);
+	border: solid black thin;
+	border-radius: 5px 5px;
+}
+
+#accordion .card-body
+{
+	background-color: white;
+	letter-spacing: 1.5px;
+	text-align: left;
+}
+
+/*--------------------------------------------------------- FOOTER ---------------------------------------------------*/
+
+footer
+{
+	background-color: white;
+}
+
+/*-- CONTACT --*/
+
+.contacter
+{
+	font-size: 1rem;
+	font-family: "garmond";
+	color: black;
+	letter-spacing: 2px;
+}
+
+
+/*-- FORMULAIRE --*/
+
+legend
+{
+	font-weight: bold;
+	font-size: 0.9rem;
+	color: black;
+	letter-spacing: 2px;
+}
+
+
+/*-- MAPS --*/
+
+.map-container-2
+{
+overflow:hidden;
+padding-bottom:56.25%;
+height:0;
+}
+
+.map-container-2 iframe
+{
+left:0;
+top:0;
+height:50%;
+width:100%;
 }
