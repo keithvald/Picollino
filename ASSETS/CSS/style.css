@@ -6,23 +6,17 @@
 
 @font-face
 {
-	font-family: "garmond";
-	src: url('../FONT/garamond-bold/garmond.ttf');
+	font-family: "garamond";
+	src: url('../FONT/garamond-bold/garamond-bold.ttf');
 }
-
 
 @font-face
 {
-	font-family: "";
-	src: url('');
+	font-family: "garamond-amsterdam";
+	src: url('../FONT/Garamont Amsterdam BQ Regular/Garamont Amsterdam BQ Regular.otf');
 }
 
 
-@font-face
-{
-	font-family: "";
-	src: url('');
-}
 
 /*------------------------------------------ BODY --------------------------------------------*/
 body
@@ -47,14 +41,14 @@ body
 h2
 {
 	font-size: 2em;
-	font-family: "garmond";
+	font-family: "garamond";
 	letter-spacing: 0.9rem;
 }
 
 h2 a
 {
 	font-size: 1.5em;
-	font-family: "garmond";
+	font-family: "garamond";
 	letter-spacing: 0.9rem;
 }
 
@@ -81,24 +75,28 @@ nav
 	border-width: 3px;
 	border-color: rgb(223, 203, 0);
 	width: 100%;
-	margin-top: -1.5rem;
-  	position: fixed;
+	margin-top: 0;
 }
 
-.navbar-brand
+
+nav > a
 {
-	padding-top: 0;
-	padding-bottom: 0;
+
+	background-color: pink;
+}
+
+
+.nav-item
+{
+	padding: 0.5rem 2rem;
 }
 
 .nav-link
 {
-	font-family: "garmond";
-	font-size: 1.5em;
+	font-family: "garamond";
+	font-size: 2em;
 	color: black;
-	letter-spacing: 0.4rem;
-	 padding: 0.5rem 3rem;
-
+	letter-spacing: 0.3rem;
 }
 
 
@@ -158,12 +156,12 @@ hr {
 	font-weight: 550;
 }
 
+
 /*-- CARD GAMMES --*/
 
 
 .container-fluid:nth-of-type(3) 
 {
-	margin-top: 5%;
 	width: 90%;
 }
 
@@ -216,7 +214,7 @@ hr {
   border: none;
 }
 
-.container-fluid:nth-of-type(4) .card img
+.container-fluid:nth-of-type(4) .rounded-circle
 {
 
 	border-radius: 100%;
@@ -228,7 +226,7 @@ hr {
 	text-align: center;
 }
 
-.container-fluid:nth-of-type(4) .card-body .btn
+.container-fluid:nth-of-type(4) .btn
 {
 	background-color: rgb(223, 203, 0);
 	border: none;
@@ -248,7 +246,6 @@ hr {
   border: 0;
 }
 
-}
 /*-- NOS ORIGINES --*/
 
 .container:nth-of-type(4)
@@ -257,22 +254,8 @@ hr {
 
 }
 
-.container:nth-of-type(4) .container-fluid .container-fluid
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-}
-
 /*-- NOS INFRASTRUCTURES --*/
 
-
-.container:nth-of-type(4) .container-fluid:nth-of-type(2) .container-fluid
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-}
 
 .origines
 {
@@ -291,7 +274,6 @@ hr {
 	display: block;
 	position: relative;
 	width: 50%;
-	margin-bottom: 8%;
 }
 
 #accordion .card-header
@@ -315,102 +297,98 @@ footer
 	background-color: white;
 }
 
-footer .container-fluid
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-}
 
 /*-- CONTACT --*/
 
 .contacter
 {
-	width: 300px;
-	height: 300px;
-	font-size: 1.3rem;
-	font-family: "garmond";
+	font-size: 1.1rem;
 	color: black;
 	letter-spacing: 2.5px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: flex-start;
+}
+
+.contacter p 
+{
+	font-family: "garamond-amsterdam";
 }
 
 a[href="tel:+3301 52 48 68 20"]
 {
 	color: black;
 	text-decoration: none;
+	font-family: "garamond-amsterdam";
 }
 
 .contacter .reseauS
 {
-	width: 70%;
+	width: 50%;
+	margin-left: 25%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	align-items: center;
-
 }
 
 /*-- FORMULAIRE --*/
 
-.formulaire_contacter
-{
-	margin-top: 5%;
-}
-
-form
-{
-	width: 60%;
-
-}
-
-fieldset > legend
+.adresse h4
 {
 	font-size: 1.5em;
-	text-align: center;
+	font-family: "garamond";
+	letter-spacing: 0;
 }
 
-
-legend
+label
 {
+	font-family: "garamond";
 	font-weight: bold;
 	font-size: 0.9rem;
 	color: black;
+	text-align: left;
 	letter-spacing: 2px;
 }
 
-input
+.form-group input
 {
-	width: 300px;
+	border-color: black;
+	border-width: thin;
+	border-radius: 5px;
+	margin-top: -2%;
+	padding: 5px;
+	background-color: rgba(205,205,205,0.50);
 }
 
-input[value="Envoyer"]
+.form-group textarea
 {
-	font-family: "garmond";
-	width: 40%;
+	border-color: black;
+	border-width: thin;
+	border-radius: 5px;
+	background-color: rgba(205,205,205,0.50);
+
+}
+
+button[type="submit"]
+{
+	font-family: "garamond";
+	width: 25%;
 	font-weight: bold;
 	background: rgb(223,203,0);
 	border: none;
     border-radius: 0.25rem;
-
 }
 
 
 /*-- MAPS --*/
 
-.maps
+
+iframe
 {
-	display: flex;
-	align-self: center;
+	background-color: pink;
+
 }
 
 .maps h4
 {
 	font-size: 1.5em;
-	text-align: center;
-	font-family: "garamond-bold";
+	font-family: "garamond";
+	letter-spacing: 0;
 }
